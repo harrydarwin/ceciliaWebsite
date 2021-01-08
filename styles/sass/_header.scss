@@ -1,0 +1,28 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.heading {
+    order: 1;
+}
+
+h1 {
+    font-size: 6rem;
+    text-align: right;
+    padding: 0 40px;
+    text-transform: uppercase;
+}
+
+.takeQuiz {
+    background-color: #E3C5B8;
+    display: flex;
+}
+
+.container {
+    width: 60%;
+    margin: auto auto ;
+    text-align: left;
+}
+

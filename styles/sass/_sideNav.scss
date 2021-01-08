@@ -2,6 +2,7 @@
     width: 70px;
     height: 100%;
     position: fixed;
+    font-size: 1.3rem;
 }
 
 .burgerContent {
@@ -74,20 +75,18 @@
     }
 
     .moreNav {
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-rows: 1fr 5fr 4fr;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .search {
-        font-size: 1.3rem;
         text-align: center;
         padding: 20px;
         border: 1px solid slategray;
     }
 
     .socials {
-        font-size: 1.3rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -100,7 +99,28 @@
     }
 
     .subscribeButton {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        right: auto;
+        left: 0;
+        width: 70px;
+        padding: 20px 0;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: white;
+        line-height: 1.6;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all .1s ease-in-out;
+    }
+
+    .subscribeButton:hover,
+    .subscribeButton:focus {
+        background-color: white;
+        color: black;
     }

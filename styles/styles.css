@@ -241,6 +241,10 @@ html {
   margin: 0;
 }
 
+body {
+  font-size: 1.6rem;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -250,10 +254,30 @@ img {
   width: 100%;
 }
 
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 2400px;
+  margin: 0 auto;
+}
+
+.siteContainer {
+  margin-left: 70px;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h2 span {
+  display: block;
+}
+
 .sideBar {
   width: 70px;
   height: 100%;
   position: fixed;
+  font-size: 1.3rem;
 }
 
 .burgerContent {
@@ -339,23 +363,23 @@ input#menu {
 }
 
 .moreNav {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1;
-      grid-template-columns: 1;
-  -ms-grid-rows: 1fr 5fr 4fr;
-      grid-template-rows: 1fr 5fr 4fr;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .search {
-  font-size: 1.3rem;
   text-align: center;
   padding: 20px;
   border: 1px solid slategray;
 }
 
 .socials {
-  font-size: 1.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,6 +399,14 @@ input#menu {
 }
 
 .subscribeButton {
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  right: auto;
+  left: 0;
+  width: 70px;
+  padding: 20px 0;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,4 +417,54 @@ input#menu {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  color: white;
+  line-height: 1.6;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+.subscribeButton:hover,
+.subscribeButton:focus {
+  background-color: white;
+  color: black;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.heading {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+h1 {
+  font-size: 6rem;
+  text-align: right;
+  padding: 0 40px;
+  text-transform: uppercase;
+}
+
+.takeQuiz {
+  background-color: #E3C5B8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container {
+  width: 60%;
+  margin: auto auto;
+  text-align: left;
 }
