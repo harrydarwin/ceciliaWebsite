@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Cecilia Brush</title>
 </head>
@@ -35,12 +40,15 @@
                     <i class="fas fa-search"></i>
                 </div>
                 <div class="socials">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <div class="socialsContainer">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fas fa-tree"></i></a>
+                    </div>
                 </div>
-                <div class="subscribeButton">
+                <div class="subscribeButton button">
                     <span>s</span>
                     <span>u</span>
                     <span>b</span>
@@ -60,14 +68,242 @@
                     <p class="srOnly">Photo of cecilia</p>
                 </div>
                 <div class="takeQuiz">
-                    <div class="container">
+                    <div class="quizContainer">
                         <h2>Connect with <span>your customers</span></h2>
-                        <p>The film industry, simplified; for creatives want to convert sales</p>
-                        <button>Take the quiz</button>
+                        <p>The entertainment industry, simplified; <span>for creative film makers who want to convert sales.</span></p>
+                        <button class="button">Take the quiz</button>
                     </div>
                 </div>                
             </Header>
+            <main>
+                <div class="tickerHolder">
+                    <div class="tickerTape" id="carousel">
+                        <div class="logos"><img src="./assets/1330063_filmartonlinelogo_512263.jpg" /></div>
+                        <div class="logos"><img src="./assets/afm.jpg" /></div>
+                        <div class="logos"><img src="./assets/berlin.png" /></div>
+                        <div class="logos"><img src="./assets/cannes.png" /></div>
+                        <div class="logos"><img src="./assets/LOGOMIPtvnoirseul.jpg" /></div>
+                        <div class="logos"><img src="./assets/Tiff.jpeg" /></div>
+                    </div>
+                </div>
+                <section class="yourFilm" id="yourFilm">
+                    <div class="container">
+                        <div class="gridTime">
+                            <div class="imgBox">
+                                <img class="imgUp" src="./assets/_ (2).jpeg" alt="">
+                            </div>
+                            <div class="textBox">
+                                <h2>Your business <span>deserves it</span></h2>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere voluptate quis quibusdam, et nisi voluptatibus officiis sit rem distinctio vel, doloribus soluta recusandae dolor voluptatum.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, sint ad vero nihil, temporibus perferendis, in consequatur voluptatibus soluta delectus laudantium odit aut id praesentium soluta porro temporibus?</p>
+                                <a href="#" class="button">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="services" class="services">
+                    <div class="container">
+                        <h2>Checkout The Services</h2>
+                        <div class="serviceGrid">
+                            <div class="eachService">
+                                <div class="serviceImage">
+                                    <h3>01</h3>
+                                    <img class="imgUp" src="./assets/6BCB1DF4-0670-47FF-8B1D-D033B50C7715_1_201_a.jpeg" alt="">
+                                </div>
+                                <div class="serviceText">
+                                    <h4>Cowgirl</h4>
+                                    <p>Tousled wayfarers DIY slow-carb Bushwick, freegan four loko typewriter irony mlkshk art party 3 wolf moon salvia PBR&B.</p>
+                                    <a class="button" href="#">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="eachService">
+                                <div class="serviceImage">
+                                    <h3>02</h3>
+                                    <img class="imgUp" src="./assets/9A88957D-AE6E-479F-80CD-86312FE47AB7_1_201_a.jpeg" alt="">
+                                </div>
+                                <div class="serviceText">
+                                    <h4>Reverse Cowgirl</h4>
+                                    <p>Tousled wayfarers DIY slow-carb Bushwick, freegan four loko typewriter irony mlkshk art party 3 wolf moon salvia PBR&B.</p>
+                                    <a class="button" href="#">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="eachService">
+                                <div class="serviceImage">
+                                    <h3>03</h3>
+                                    <img class="imgUp" src="./assets/DBA4F749-7F0B-44D0-BA27-A0944D8AEC3F_1_201_a.jpeg" alt="">
+                                </div>
+                                <div class="serviceText">
+                                    <h4>Doggy</h4>
+                                    <p>Tousled wayfarers DIY slow-carb Bushwick, freegan four loko typewriter irony mlkshk art party 3 wolf moon salvia PBR&B.</p>
+                                    <a class="button" href="#">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="clients">
+                    <div class="container">
+                        <div class="clientsWidget">
+                            <h2><span>Happy</span><span>Clients</span></h2>
+                            <div class="clientImage">
+                                <img src="http://www.placecage.com/150/150" alt="">
+                            </div>
+                            <div class="clientText">
+                                <p>Urna nec tincidunt praesent semper. Vestibulum mattis ullamcorper velit sed ullamcorper. Diam maecenas sed enim ut sem. Eu ultrices vitae auctor eu augue ut lectus arcu bibendum. Massa ultricies mi quis hendrerit. Ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum.</p>
+                            </div>
+                            <p class="name"><a href="#">Nicolas</a></p>    
+                            <div class="arrows">
+                            <i class="fas fa-chevron-left"></i>   <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="latestBlog" class="latestBlog">
+                    <div class="container">
+                        <h2>Latest on the blog</h2>
+                        <div class="serviceGrid">
+                            <div class="eachService">
+                                <div class="serviceImage">
+                                    
+                                    <img class="imgUp" src="./assets/6BCB1DF4-0670-47FF-8B1D-D033B50C7715_1_201_a.jpeg" alt="">
+                                </div>
+                                <div class="serviceText">
+                                    <h4><a href="#">5 WAYS TO IMPROVE EMAIL NEWSLETTER OPEN RATE</a></h4>
+                                    <time class="entryTime">July 1, 2017</time>
+                                    <p>Viral direct trade retro, freegan DIY farm-to-table flannel plaid PBR cliche deep v. ...</p>
+                                    <a class="button" href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="eachService">
+                                <div class="serviceImage">
+                                    
+                                    <img class="imgUp" src="./assets/9A88957D-AE6E-479F-80CD-86312FE47AB7_1_201_a.jpeg" alt="">
+                                </div>
+                                <div class="serviceText">
+                                    <h4><a href="#">8 THINGS YOU SHOULD AVOID ON SOCIAL MEDIA</a></h4>
+                                    <time class="entryTime">July 10, 2017</time>
+                                    <p>Viral direct trade retro, freegan DIY farm-to-table flannel plaid PBR cliche deep v. ...</p>
+                                    <a class="button" href="#">Read More</a>
+                                </div>
+                            </div>
+                            <div class="eachService">
+                                <div class="serviceImage">
+                                   
+                                    <img class="imgUp" src="./assets/DBA4F749-7F0B-44D0-BA27-A0944D8AEC3F_1_201_a.jpeg" alt="">
+                                </div>
+                                <div class="serviceText">
+                                    <h4><a href="#">HOW TO ATTRACT IDEAL CLIENTS THE RIGHT WAY</a></h4>
+                                    <time class="entryTime">July 16, 2017</time>
+                                    <p>Viral direct trade retro, freegan DIY farm-to-table flannel plaid PBR cliche deep v. ...</p>
+                                    <a class="button" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="courses" class="courses">
+                    <div class="container">
+                        <h2>Latest Courses</h2>
+                        <h5>Grab a coffee and learn at your own pace</h5>
+                        <div class="serviceGrid">
+                            <div class="eachService">
+                                <a href="#">
+                                    <div class="serviceImage courseImage">
+                                        <img class="imgUp" src="./assets/6BCB1DF4-0670-47FF-8B1D-D033B50C7715_1_201_a.jpeg" alt="">
+                                    </div>
+                                    <span class="productTitle">Ebook 1</span>
+                                </a>
+                                <p>$20.00</p>
+                            </div>
+                            <div class="eachService">
+                                <a href="#">
+                                    <div class="serviceImage courseImage">
+                                        <img class="imgUp" src="./assets/9A88957D-AE6E-479F-80CD-86312FE47AB7_1_201_a.jpeg" alt="">
+                                    </div>
+                                    <span class="productTitle">Ebook 2</span>
+                                </a>
+                                <p><span>$20.00</span> $15.00</p>
+                                </div>
+                            <div class="eachService">
+                                <a href="#">
+                                    <div class="serviceImage courseImage">
+                                        <img class="imgUp" src="./assets/DBA4F749-7F0B-44D0-BA27-A0944D8AEC3F_1_201_a.jpeg" alt="">
+                                    </div>
+                                    <span class="productTitle">Ebook 3</span>
+                                </a>
+                                <p>$20.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="newsLetter" class="newsletter">
+                    <div class="splitGrid">
+                        <div class="funImage">
+                            <img src="http://www.placecage.com/840/500" alt="">
+                        </div>
+                        <div class="signUp">
+                            <h2>Newsletter</h2>
+                            <p>Subscribe to receive freebies, news & promos directly in your inbox</p>
+                            <div class="letterForm">
+                                <form action="">
+                                    <label for="name" class="srOnly"></label>
+                                    <input type="text" id="name" name="name" placeholder="NAME" required>
+                                    <label for="email" class="srOnly"></label>
+                                    <input type="email" id="email" name="email" placeholder="EMAIL" required>
+                                    <button class="button" type="submit">Go!</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="contactInfo" class="contactInfo">
+                    <div class="container">
+                        <div class="contactFlex">
+                            <div class="instaWithMe">
+                                <h4>Instagram with me!</h4>
+                                <div class="instaGrid">
+                                    <div class="imageContainer"><img src="http://www.placecage.com/192/192" alt=""></div>
+                                    <div class="imageContainer"><img src="http://www.placecage.com/192/192" alt=""></div>
+                                    <div class="imageContainer"><img src="http://www.placecage.com/192/192" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="infoSocial">
+                                <div class="info">
+                                    <h4>Info</h4>
+                                    <ul>
+                                        <li>Blog</li>
+                                        <li>Contact</li>
+                                        <li>Terms</li>
+                                        <li>Testimonials</li>
+                                        <li>Privacy Policy</li>
+                                        <li>Cookies Policy</li>
+                                    </ul>
+                                </div>
+                                <div class="social">
+                                    <h4>Social</h4>
+                                    <ul>
+                                        <li>Facebook</li>
+                                        <li>Instagram</li>
+                                        <li>Twitter</li>
+                                        <li>Pinterest</li>
+                                        <li>Youtube</li>
+                                        <li>LinkedIn</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer>
+                    <p>Cecilia &copy; 2021 - Created by <a href="http://www.harrydarwin.com">Harry Darwin</a></p>
+                </footer>
+            </main>
         </div>
     </div>
+
+    
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

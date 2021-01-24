@@ -6,23 +6,33 @@ header {
 
 .heading {
     order: 1;
+    background: url(../assets/5DEDE4B4-ECF8-48E7-A2B5-7F65367B3830.jpeg);
+    background-repeat: no-repeat;
 }
 
 h1 {
     font-size: 6rem;
     text-align: right;
     padding: 0 40px;
-    text-transform: uppercase;
+    margin: 40px 30px;
 }
 
 .takeQuiz {
-    background-color: #E3C5B8;
+    background-color: $primary;
     display: flex;
+    align-items: center;
+    
 }
 
-.container {
-    width: 60%;
-    margin: auto auto ;
+.quizContainer {
+    width: 68%;
+    margin: 0 auto;
     text-align: left;
+    & p {
+        margin: 25px 0;
+        & span {
+            display: block;
+        }
+    }
 }
 

@@ -3,6 +3,7 @@
     height: 100%;
     position: fixed;
     font-size: 1.3rem;
+    background-color: white;
 }
 
 .burgerContent {
@@ -50,7 +51,8 @@
     .burgs {
         height: 50px;
         width: 100%;
-        border: 1px solid slategray;
+        border-bottom: $border;
+        border-right: $border;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -60,13 +62,13 @@
         display: block;
         z-index: 3;
         background: #2c2c2c;
-        height: 2px;
+        height: 1px;
         width: 25px;
         border-radius: 5px;
         transition: transform .5s; 
         margin-left: 30%; 
-        margin-top: 3px;
-        margin-bottom: 3px;
+        margin-top: 3.5px;
+        margin-bottom: 3.5px;
     }
 
 
@@ -82,8 +84,9 @@
 
     .search {
         text-align: center;
-        padding: 20px;
-        border: 1px solid slategray;
+        padding: 15px;
+        border-bottom: $border;
+        border-right: $border;
     }
 
     .socials {
@@ -91,11 +94,28 @@
         flex-direction: column;
         align-items: center;
         padding-top: 30px;
+        height: 100%;
+        border-right: $border;
+    }
+    .socialsContainer {
+        display: flex;
+        flex-direction: column;
+        height:  25%;
+        justify-content: space-between;
+    }
+
+    .socials a {
+        padding: 3px;
+        text-align: center;
     }
 
     .socials i {
-        padding: 3px;
-        margin-top: 20px;
+        transition: all .1s ease-in-out;
+    }
+
+    .socials a:hover,
+    .socials a:focus {
+        color: darken($primary, 10%);
     }
 
     .subscribeButton {
@@ -105,22 +125,14 @@
         right: auto;
         left: 0;
         width: 70px;
-        padding: 20px 0;
+        padding: 20px;
         height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: black;
-        color: white;
-        line-height: 1.6;
-        text-transform: uppercase;
+        line-height: 1.4;
         cursor: pointer;
-        transition: all .1s ease-in-out;
-    }
-
-    .subscribeButton:hover,
-    .subscribeButton:focus {
-        background-color: white;
-        color: black;
+        border: none;
+        font-size: 1.3rem;
     }

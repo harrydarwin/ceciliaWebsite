@@ -1,0 +1,286 @@
+.textBox {
+    max-width: 510px;
+    padding-top: 40px;
+    & h2 {
+        position: relative;
+        z-index: 5;
+        background: white;
+        padding: 30px;
+        margin-left: -100px;
+        margin-bottom: 28px;
+    }
+    & p {
+        margin: 0 0 28px;
+    }
+    & p:nth-of-type(2) {
+        max-width: 485px;
+    }
+}
+
+.imgBox {
+    max-width: 506px;
+}
+
+
+section.services,
+section.latestBlog,
+section.courses {
+    height: 100vh;
+    
+    & h2 {
+        text-align: center;
+        font-size: 3.5rem;
+        margin-bottom: 44px;
+    }
+}
+
+section.services {
+    background-color: $secondary;
+}
+
+.serviceGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    padding: 0 20px;
+}
+
+.eachService {
+    display: flex;
+    flex-direction: column;
+    & .button {
+        background-color: white;
+        color: black;
+        border: none;
+        &:hover {
+            color: darken($primary, 10%);
+        }
+    }
+}
+
+.serviceImage {
+    position: relative;
+    max-width: 322.6px;
+    & h3 {
+        position: absolute;
+        top: 0px;
+        left: -30px;
+        font-size: 6rem;
+        z-index: 99;
+        transform: rotate(-90deg);
+        font-weight: 200;
+    }
+}
+
+.serviceText {
+    margin-top: 40px;
+    & h4 {
+        font-size: 2.5rem;
+        font-weight: 200;
+        margin-bottom: 30px;
+    }
+    & p {
+        margin-bottom: 30px;
+        width: 90%;
+    }
+}
+
+
+.clientsWidget {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    & h2 {
+        position: absolute;
+        top: 30px;
+        left: 0;
+        right: 0;
+        font-size: 3.5rem;
+        text-align: center;
+        & span {
+            display: inline;
+            &:first-child {
+            margin-right: 125px;
+            }
+            &:last-child {
+            margin-left: 125px;
+            }
+        }
+    }
+}
+
+.clientImage {
+    width: 20%;
+    padding-top:.5em;
+    margin: 0 auto;
+    & img {
+        max-width: 150px;
+        border-radius: 50%;
+        margin: 0 auto 30px;
+    }
+}
+
+.clientText {
+    margin-bottom: 30px;
+}
+
+.name {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.arrows {
+    & i {
+        padding: 3px;
+        font-size: 1.9rem;
+        cursor: pointer;
+    }
+    & i:first-child {
+        margin-right: 8px;
+    }
+    & i:last-child {
+        margin-left: 8px;
+    }
+}
+
+section.latestBlog {
+    & h4 {
+        margin-bottom: 10px;
+        transition: all 0.1s ease-in-out;
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+    }
+    & time {
+        font-size: 1.2rem;
+    }
+    & p {
+        margin-top: 30px;
+    }
+}
+
+section.courses {
+    & h2 {
+        margin-bottom: 20px;
+    }
+    & h5 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    & a {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        &:hover {
+            color: $primary;
+        }
+    }
+    & p {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 1.4rem;
+        & span {
+            text-decoration: line-through;
+        }
+    }
+}
+
+.courseImage {
+    margin-bottom: 30px;
+}
+
+.splitGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.letterForm {
+    width: 60%;
+}
+
+.signUp {
+    background-color: $primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & p {
+        margin: 20px 0;
+    }
+    & form {
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        grid-gap: 10px;
+        width: 100%;
+
+    }
+    & input {
+        height: 43px;
+        padding: 10.5px 20px;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 400;
+        background-color: #ffffff;
+        border: 1px solid #000000;
+        color: #000000;
+        line-height: 1.6;
+        &::placeholder {
+            color: black;
+            opacity: 1;
+            letter-spacing: 2px;
+            font-family: "Work Sans", sans-serif;
+        }
+    }
+}
+
+section.contactInfo .container {
+    padding-bottom: 20px;
+}
+
+.contactFlex {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 60px;
+    & h4 {
+        font-size: 1.8rem;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.instaWithMe {
+    width: calc(65% - 40px);
+    padding-right: 40px;
+    border-right: 1px solid #ccc;
+}
+
+.instaGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 0 10px 20px;
+}
+
+
+
+.infoSocial {
+    width: calc(35% - 40px);
+    padding-left: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    flex: 1;
+    & li {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        line-height: 2;
+        font-family: 'Work Sans', sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+}
