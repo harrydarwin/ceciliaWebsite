@@ -1,12 +1,11 @@
 const ceceApp = {};
 
 
-
 ceceApp.init = () => {
-    ceceApp.runTickerSlide();
-   
+    
+    ceceApp.listeners();
+    ceceApp.runTickerSlide();  
 }
-
 
 
 ceceApp.runTickerSlide = () => {
@@ -37,6 +36,24 @@ ceceApp.runTickerSlide = () => {
     });
 }
 
+
+ceceApp.listeners = () => {
+    
+  const checkbox = document.getElementById('menu');
+    const navCover = document.getElementById('coverUp');
+
+  checkbox.onclick = function() {
+      
+    document.body.classList.toggle('navOpen');
+    doubleToggle(navCover, 'openTransition', 'closeTransition');
+    
+  }
+}
+
+const doubleToggle = function (element, class1, class2) {
+    element.classList.toggle(class1);
+    element.classList.toggle(class2);
+}
 
   $(document).ready(function() {
     ceceApp.init();

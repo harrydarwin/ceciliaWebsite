@@ -48,7 +48,9 @@ section.services {
 .eachService {
     display: flex;
     flex-direction: column;
-    & .button {
+}
+
+.serviceButton {
         background-color: white;
         color: black;
         border: none;
@@ -56,7 +58,6 @@ section.services {
             color: darken($primary, 10%);
         }
     }
-}
 
 .serviceImage {
     position: relative;
@@ -239,6 +240,7 @@ section.courses {
 
 section.contactInfo .container {
     padding-bottom: 20px;
+    padding-top: 60px;
 }
 
 .contactFlex {
@@ -283,4 +285,144 @@ section.contactInfo .container {
         text-transform: uppercase;
         margin-bottom: 10px;
     }
+}
+
+//ABOUT PAGE
+
+.aboutMain {
+    padding-top: 120px;
+    & h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+
+.clientRelations {
+    height: 75vh;
+    background-color: #f2f2f2;
+    padding: 100px 0;
+}
+
+.relationText {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    line-height: 2;
+    font-family: $work;
+    & p{
+        display: inline-block;
+        text-align: justify;
+    }
+    & span {
+        font-size: 5rem;
+        display: inline-block;
+        line-height: 1;
+        margin-right: 10px;
+        float: left;
+    }
+}
+
+.canHelp {
+    background: $secondary;
+    padding: 120px 0;
+    & h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    & h3 {
+        color: #efcfae;
+        font-size: 95px;
+        font-weight: 300;
+        letter-spacing: 2.5px;
+    }
+    & h4 {
+        font-size: 3.5rem;
+        letter-spacing: 1.5;
+        font-weight: 200;
+        font-family: $headFont;
+        position: absolute;
+        top: 50%;
+        left: 8px;
+    }
+}
+
+.helpGrid {
+    width: 55%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    & p {
+        width: 90%;
+        margin-bottom: 28px;
+        margin-top: 15px;
+    }
+    & .button {
+        padding: 10px 20px;
+    }
+}
+
+.titleNum {
+    position: relative;
+    & h3 {
+        color: #efcfae;
+        font-size: 95px;
+        font-weight: 300;
+        letter-spacing: 2.5px;
+    }
+    & h4 {
+        font-size: 3.5rem;
+        letter-spacing: 1.5;
+        font-weight: 200;
+        font-family: $headFont;
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        opacity: 0.8;
+    }
+}
+
+.workVideo {
+    position: relative;
+    & .button {
+        position: absolute;
+        top: 45%;
+        left: 40%;
+        font-size: 1.8rem;
+        line-height: 1.8em;
+        padding: 15px 30px;
+        transition: all .4s;
+    }
+}
+
+.knowMe {
+    padding: 100px 0;
+    & h2 {
+        text-align: center;
+        margin-bottom: 30px
+    }
+    & h5 {
+        text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+}
+
+.knowMeGrid {
+    margin: 0 auto;
+    display: grid;
+    width: 55%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    & h4 {
+        top: 49%;
+    }
+}
+
+.contactInfoAbout .container {
+    border-top: 1px solid #ccc;
 }

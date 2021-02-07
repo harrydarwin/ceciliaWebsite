@@ -19,10 +19,11 @@
                 <input type="checkbox" name="menu" id="menu">
                 <label class="srOnly" for="menu">click to open navigation menu</label>
                 <div class="burgs">
-                    <div class="burg burg1"></div>
-                    <div class="burg burg2"></div>
-                    <div class="burg burg3"></div>
+                    <div id="burg1" class="burg burg1 open1"></div>
+                    <div id="burg2" class="burg burg2 open2"></div>
+                    <div id="burg3" class="burg burg3 open3"></div>
                 </div>
+                <div id="coverUp" class="coverUp openTransition"></div>
                 <div class="burgerContent">
                     <nav>
                         <ul class="topNav">
@@ -31,6 +32,10 @@
                             <li><a href="#services">Services</a></li>
                             <li><a href="#blog">Blog</a></li>
                             <li><a href="#contact">Contact</a></li>
+                            <ul class="navIcons">
+                                <li><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
+                                <li><a href="#"><i class="fas fa-user-circle"></i></a></li>
+                            </ul>
                         </ul>
                     </nav>
                 </div>
@@ -45,7 +50,7 @@
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fas fa-tree"></i></a>
+                        <a class="imdb" href="#"><i class="fab fa-imdb"></i></a>
                     </div>
                 </div>
                 <div class="subscribeButton button">
@@ -63,7 +68,7 @@
         </div>
         <div class="siteContainer">
             <Header>
-                <div class="heading">
+                <div class="heading headingMain">
                     <h1>Cecilia</h1>
                     <p class="srOnly">Photo of cecilia</p>
                 </div>
@@ -78,12 +83,11 @@
             <main>
                 <div class="tickerHolder">
                     <div class="tickerTape" id="carousel">
-                        <div class="logos"><img src="./assets/1330063_filmartonlinelogo_512263.jpg" /></div>
-                        <div class="logos"><img src="./assets/afm.jpg" /></div>
+                        <div class="logos"><img src="./assets/filmArt.png" /></div>
+                        <div class="logos"><img src="./assets/afm.png" /></div>
                         <div class="logos"><img src="./assets/berlin.png" /></div>
                         <div class="logos"><img src="./assets/cannes.png" /></div>
-                        <div class="logos"><img src="./assets/LOGOMIPtvnoirseul.jpg" /></div>
-                        <div class="logos"><img src="./assets/Tiff.jpeg" /></div>
+                        <div class="logos"><img src="./assets/tiff.png" /></div>
                     </div>
                 </div>
                 <section class="yourFilm" id="yourFilm">
@@ -96,7 +100,7 @@
                                 <h2>Your business <span>deserves it</span></h2>
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere voluptate quis quibusdam, et nisi voluptatibus officiis sit rem distinctio vel, doloribus soluta recusandae dolor voluptatum.</p>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, sint ad vero nihil, temporibus perferendis, in consequatur voluptatibus soluta delectus laudantium odit aut id praesentium soluta porro temporibus?</p>
-                                <a href="#" class="button">Learn More</a>
+                                <a href="about.html" class="button">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -108,34 +112,34 @@
                             <div class="eachService">
                                 <div class="serviceImage">
                                     <h3>01</h3>
-                                    <img class="imgUp" src="./assets/6BCB1DF4-0670-47FF-8B1D-D033B50C7715_1_201_a.jpeg" alt="">
+                                    <img class="imgUp" src="./assets/service1.png" alt="">
                                 </div>
                                 <div class="serviceText">
                                     <h4>Cowgirl</h4>
                                     <p>Tousled wayfarers DIY slow-carb Bushwick, freegan four loko typewriter irony mlkshk art party 3 wolf moon salvia PBR&B.</p>
-                                    <a class="button" href="#">Learn More</a>
+                                    <a class="button serviceButton" href="#">Learn More</a>
                                 </div>
                             </div>
                             <div class="eachService">
                                 <div class="serviceImage">
                                     <h3>02</h3>
-                                    <img class="imgUp" src="./assets/9A88957D-AE6E-479F-80CD-86312FE47AB7_1_201_a.jpeg" alt="">
+                                    <img class="imgUp" src="./assets/service2.png" alt="">
                                 </div>
                                 <div class="serviceText">
                                     <h4>Reverse Cowgirl</h4>
                                     <p>Tousled wayfarers DIY slow-carb Bushwick, freegan four loko typewriter irony mlkshk art party 3 wolf moon salvia PBR&B.</p>
-                                    <a class="button" href="#">Learn More</a>
+                                    <a class="button serviceButton" href="#">Learn More</a>
                                 </div>
                             </div>
                             <div class="eachService">
                                 <div class="serviceImage">
                                     <h3>03</h3>
-                                    <img class="imgUp" src="./assets/DBA4F749-7F0B-44D0-BA27-A0944D8AEC3F_1_201_a.jpeg" alt="">
+                                    <img class="imgUp" src="./assets/service3.png" alt="">
                                 </div>
                                 <div class="serviceText">
                                     <h4>Doggy</h4>
                                     <p>Tousled wayfarers DIY slow-carb Bushwick, freegan four loko typewriter irony mlkshk art party 3 wolf moon salvia PBR&B.</p>
-                                    <a class="button" href="#">Learn More</a>
+                                    <a class="button serviceButton" href="#">Learn More</a>
                                 </div>
                             </div>
                         </div>
@@ -239,7 +243,7 @@
                 <section id="newsLetter" class="newsletter">
                     <div class="splitGrid">
                         <div class="funImage">
-                            <img src="http://www.placecage.com/840/500" alt="">
+                            <img src="./assets/Newsletter section.jpeg" alt="">
                         </div>
                         <div class="signUp">
                             <h2>Newsletter</h2>
@@ -262,9 +266,9 @@
                             <div class="instaWithMe">
                                 <h4>Instagram with me!</h4>
                                 <div class="instaGrid">
-                                    <div class="imageContainer"><a href="https://www.instagram.com/cbrush.film.production/"><img src="http://www.placecage.com/192/192" alt=""></a></div>
-                                    <div class="imageContainer"><a href="https://www.instagram.com/cbrush.film.production/"><img src="http://www.placecage.com/192/192" alt=""></a></div>
-                                    <div class="imageContainer"><a href="https://www.instagram.com/cbrush.film.production/"><img src="http://www.placecage.com/192/192" alt=""></a></div>
+                                    <div class="imageContainer"><a href="https://www.instagram.com/cbrush.film.production/"><img src="./assets/1.png" alt=""></a></div>
+                                    <div class="imageContainer"><a href="https://www.instagram.com/cbrush.film.production/"><img src="./assets/2.png" alt=""></a></div>
+                                    <div class="imageContainer"><a href="https://www.instagram.com/cbrush.film.production/"><img src="./assets/3.png" alt=""></a></div>
                                 </div>
                             </div>
                             <div class="infoSocial">
