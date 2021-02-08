@@ -7,6 +7,7 @@ ceceApp.init = () => {
     ceceApp.runTickerSlide();  
 }
 
+ 
 
 ceceApp.runTickerSlide = () => {
     $('#carousel').slick({
@@ -38,9 +39,19 @@ ceceApp.runTickerSlide = () => {
 
 
 ceceApp.listeners = () => {
-    
+  
   const checkbox = document.getElementById('menu');
-    const navCover = document.getElementById('coverUp');
+  const navCover = document.getElementById('coverUp');
+  const links = document.getElementsByTagName('a');
+  
+
+  for(let tag in links){
+    tag.onclick = function(){
+      if(navCover.classList.includes('closeTransition')) {
+        doubleToggle(navCover, 'openTransition', 'closeTransition');
+      }
+    }
+  }
 
   checkbox.onclick = function() {
       

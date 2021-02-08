@@ -246,6 +246,7 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-weight: 400;
   line-height: 2;
+  overflow: none;
 }
 
 p {
@@ -361,6 +362,7 @@ li {
   position: fixed;
   font-size: 1.3rem;
   background-color: white;
+  z-index: 100;
 }
 
 .imdb {
@@ -376,6 +378,7 @@ li {
   overflow: hidden;
   -webkit-transition: all .5s;
   transition: all .5s;
+  z-index: 100;
 }
 
 .coverUp {
@@ -384,17 +387,17 @@ li {
   width: 100vw;
   height: 0;
   top: 0;
-  left: 50vw;
+  left: 70px;
 }
 
 .openTransition {
-  -webkit-transition: 0.5s 0.3s all linear;
-  transition: 0.5s 0.3s all linear;
+  -webkit-transition: 0.2s 0.4s all linear;
+  transition: 0.2s 0.4s all linear;
 }
 
 .closeTransition {
-  -webkit-transition: 0.1s 0 all ease;
-  transition: 0.1s 0 all ease;
+  -webkit-transition: 0.01s 0 all linear;
+  transition: 0.01s 0 all linear;
 }
 
 input#menu:checked ~ .burgerContent {
@@ -402,7 +405,7 @@ input#menu:checked ~ .burgerContent {
 }
 
 input#menu:checked ~ .coverUp {
-  height: 100px;
+  height: 70px;
 }
 
 body.navOpen {
@@ -411,7 +414,7 @@ body.navOpen {
 }
 
 .topNav {
-  z-index: 2;
+  z-index: 100;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -431,6 +434,7 @@ body.navOpen {
 
 nav {
   width: 100%;
+  z-index: 100;
 }
 
 .topNav li {
