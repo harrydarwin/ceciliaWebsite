@@ -562,6 +562,16 @@ input#menu:not(:checked) ~ .burgs > div.burg3 {
   border-right: 1px solid #ccc;
 }
 
+.search button,
+.search button:focus {
+  background: none;
+  border: none;
+}
+
+.search button:hover {
+  color: #DBAA96;
+}
+
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1085,6 +1095,8 @@ section.services {
 
 .clientText {
   margin-bottom: 30px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .name {
@@ -1454,6 +1466,56 @@ section.contactInfo .container {
 
 .contactInfoAbout .container {
   border-top: 1px solid #ccc;
+}
+
+.modalSearchForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid black;
+}
+
+.searchModalContent {
+  padding: 30px;
+  background: #DBAA96;
+}
+
+.searchModalBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searchModalHeader,
+.searchModalFooter {
+  border: none;
+}
+
+.searchSubmit,
+.searchSubmit:focus {
+  background: none;
+  border: none;
+}
+
+.searchInput {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  text-align: left;
+  letter-spacing: 2px;
+  padding: 0;
+  height: 43px;
+  line-height: 1.6;
+  outline: none;
 }
 
 footer p {

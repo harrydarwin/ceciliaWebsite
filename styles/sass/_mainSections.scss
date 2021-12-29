@@ -124,6 +124,7 @@ section.services {
 
 .clientText {
     margin-bottom: 30px;
+    transition: all 1s ease;
 }
 
 .name {
@@ -425,4 +426,52 @@ section.contactInfo .container {
 
 .contactInfoAbout .container {
     border-top: 1px solid #ccc;
+}
+
+
+
+
+
+
+// =====================
+//   =====MODALS=======
+
+.modalSearchForm {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.searchModalContent {
+    padding: 30px;
+    background: $primary;
+}
+
+.searchModalBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchModalHeader,
+.searchModalFooter {
+    border:none;
+}
+
+.searchSubmit,
+.searchSubmit:focus {
+    background: none;
+    border: none;
+}
+
+.searchInput {
+    background: none;
+    border:none;
+    font-size: 1.6rem;
+    text-align: left;
+    letter-spacing: 2px;
+    padding:0;
+    height: 43px;
+    line-height: 1.6;
+    outline: none;
 }

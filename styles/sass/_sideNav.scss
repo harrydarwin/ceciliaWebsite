@@ -193,6 +193,14 @@
         padding: 15px;
         border-bottom: $border;
         border-right: $border;
+        & button,
+        button:focus {
+            background: none;
+            border:none;
+        }
+        & button:hover {
+            color: $primary;
+        }
     }
 
     .socials {
