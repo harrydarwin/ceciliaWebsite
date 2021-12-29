@@ -8,15 +8,20 @@ header {
     order: 1;
     &Main {
         background: url(../assets/5DEDE4B4-ECF8-48E7-A2B5-7F65367B3830.jpeg);
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
+        position: relative;
     }
 }
 
 h1 {
     font-size: 6rem;
     text-align: right;
-    padding: 0 40px;
-    margin: 40px 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 2.2em;
+    margin: 0;
+    padding: 0;
 }
 
 .takeQuiz {
