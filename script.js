@@ -26,12 +26,16 @@ ceceApp.clients = [
   },
 
 ]
-if (window.location.href === `file:///c:/Users/harry/OneDrive/Documents/sites/ceciliasStuff/index.html`){
+// if (window.location.href === `file:///c:/Users/harry/OneDrive/Documents/sites/ceciliasStuff/index.html`){
 
-  ceceApp.clientName = document.getElementById('clientName');
-  ceceApp.clientText = document.getElementById('clientText');
-  ceceApp.clientImage = document.getElementById('clientPic');
-}
+//   ceceApp.clientName = document.getElementById('clientName');
+//   ceceApp.clientText = document.getElementById('clientText');
+//   ceceApp.clientImage = document.getElementById('clientPic');
+// }
+
+ceceApp.clientName = document.getElementById('clientName');
+ceceApp.clientText = document.getElementById('clientText');
+ceceApp.clientImage = document.getElementById('clientPic');
 
 
 ceceApp.init = () => {
