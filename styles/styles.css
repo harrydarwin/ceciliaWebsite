@@ -291,7 +291,7 @@ ul {
   padding: 0;
 }
 
-li {
+li:not(.serviceText li) {
   list-style: none;
   margin: 0;
 }
