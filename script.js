@@ -95,7 +95,7 @@ ceceApp.listeners = () => {
   
 
   //move through clients
-  if (window.location.href === `file:///c:/Users/harry/OneDrive/Documents/sites/ceciliasStuff/index.html`) {
+  // if (window.location.href === `file:///c:/Users/harry/OneDrive/Documents/sites/ceciliasStuff/index.html`) {
 
 
     let c = 0;
@@ -111,7 +111,7 @@ ceceApp.listeners = () => {
       else{c = ceceApp.clients.length -1;}
       ceceApp.updateClient(c);
     }
-  }
+  // }
 
   
   
