@@ -356,6 +356,71 @@ li:not(.serviceText li) {
           transform: translateY(-10px);
 }
 
+.slider-frame {
+  background-color: #F0DECE;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 445px;
+}
+
+.slider-frame .btn {
+  width: 40px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider-frame .btn.prev {
+  left: 0px;
+}
+
+.slider-frame .btn.next {
+  right: 0px;
+}
+
+.slider-frame .slider-container {
+  -webkit-transition: margin-left .3s ease, left .5s ease;
+  transition: margin-left .3s ease, left .5s ease;
+  position: absolute;
+  left: 0;
+}
+
+.slider-frame .slider-container .slide {
+  float: left;
+  position: relative;
+  top: 0;
+  -webkit-transition: width .3s ease, height .3s ease, top .3s ease;
+  transition: width .3s ease, height .3s ease, top .3s ease;
+}
+
+hr {
+  width: 100px;
+}
+
+.prev .fa {
+  padding-left: 7px;
+}
+
+.next .fa {
+  padding-left: 12px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
 .sideBar {
   width: 70px;
   height: 100%;
@@ -994,7 +1059,13 @@ section.courses h2 {
   margin-bottom: 44px;
 }
 
-section.services {
+section.courses {
+  height: auto;
+}
+
+section.services,
+section.latestBlog,
+section.process {
   background-color: #F0DECE;
 }
 
@@ -1044,7 +1115,20 @@ section.services {
 }
 
 .serviceText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin-top: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .serviceText h4 {
@@ -1054,8 +1138,12 @@ section.services {
 }
 
 .serviceText p {
-  margin-bottom: 30px;
   width: 90%;
+}
+
+.modal-md {
+  max-width: 800px;
+  margin: 30vh auto;
 }
 
 .clientsWidget {
