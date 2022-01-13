@@ -402,6 +402,10 @@ section.contactInfo .container {
 
 .workVideo {
     position: relative;
+    height: 500px;
+    background-image: url(../assets/CB-your-ideas-bh.jpg);
+    background-size: cover;
+    background-position: bottom;
     & .button {
         position: absolute;
         top: 45%;

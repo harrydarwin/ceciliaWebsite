@@ -917,9 +917,10 @@ header {
 }
 
 .headingMain {
-  background: url(../assets/5DEDE4B4-ECF8-48E7-A2B5-7F65367B3830.jpeg);
+  background: url(../assets/CB-Strong.jpg);
   background-repeat: no-repeat;
   position: relative;
+  background-size: cover;
 }
 
 h1 {
@@ -1515,6 +1516,10 @@ section.contactInfo .container {
 
 .workVideo {
   position: relative;
+  height: 500px;
+  background-image: url(../assets/CB-your-ideas-bh.jpg);
+  background-size: cover;
+  background-position: bottom;
 }
 
 .workVideo .button {
